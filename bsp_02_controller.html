@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular.js</title>
+</head>
+<body>
+    <div ng-controller="NameCtrl">
+      <input type="text" ng-model="name"></input>
+      <h1>{{name}}</h1>
+      <h2 ng-bind="name"></h2>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular.min.js"></script>
+
+    <!-- Unser JS Code ist diesmal hier: -->
+    <script>
+      var NameCtrl = function($scope) {
+        $scope.name = "Hallo Peter";
+      };
+    </script>
+</body>
+</html>
