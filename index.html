@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <title>Angular.js</title>
 </head>
-<body>
+<!--
+ng-app bedeutet app wurde initialisiert und es gibt nun einen Scope in dem
+  Variablen registriert werden können.
+ng-init zum Initialisieren mit einem Testmodel.
+-->
+<body ng-app ng-init="name='Hallo'">
+    <input type="text" ng-model="name"></input>
+    <h1 ng-cloak>{{name}}</h1>
+    <h2 ng-bind="name">Inhalt</h2>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular.min.js"></script>
 </body>
 </html>
