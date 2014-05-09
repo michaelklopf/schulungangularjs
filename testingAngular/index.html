@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="plunker">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS test</title>
+    <link href="lib/jasmine.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container" ng-controller="MainCtrl">
+    <h1>Hello {{name}}</h1>
+  </div>
+  <div id="HTMLReporter" class="jasmine_reporter"></div>
+
+
+  <script src="lib/jasmine.js"></script>
+  <script src="lib/jasmine-html.js"></script>
+  <script src="http://code.angularjs.org/1.0.5/angular.js"></script>
+  <script src="http://code.angularjs.org/1.0.5/angular-mocks.js"></script>
+
+  <script src="app.js"></script>
+  <script src="appSpec.js"></script>
+  <script src="jasmineBootstrap.js"></script> <!-- bootstraps Jasmine -->
+</body>
+</html>
