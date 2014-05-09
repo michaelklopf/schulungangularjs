@@ -1,3 +1,7 @@
 {{name}}
 <br>
-{{kapitel}}
+<ul>
+  <li ng-repeat="einzelk in kapitel | orderBy:'title'">
+    <h3>{{einzelk.title}}</h3>
+  </li>
+</ul>
