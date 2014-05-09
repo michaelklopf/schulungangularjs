@@ -1,9 +1,9 @@
 // Application starting point
-var appConfig = function($routeProvider) {
+var guidebookConfig = function($routeProvider) {
   $routeProvider.when("/", {
     controller : "ChaptersController", // dies zeigt nicht auf das js File
-    templateURL : "view/chapter.html"
+    templateUrl : "app/view/chapter.html"
   });
 };
 
-var App = angular.module('Guidebook', []).config(appConfig);
+var Guidebook = angular.module('Guidebook', ['ngRoute']).config(guidebookConfig);
